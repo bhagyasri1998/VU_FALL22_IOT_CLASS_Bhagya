@@ -14,6 +14,7 @@ Step 1:
 •	Open balenaEtcher and select the dietpi images that was unzipped.
 •	Insert the SD card and select a target.
 
+![image](https://user-images.githubusercontent.com/112636651/190541574-435774d0-9f78-4773-9904-71fffeb8b15c.png)
 
 •	Then the SD card gets flashed.
 •	Close balenaEtcher
@@ -36,6 +37,7 @@ o	AUTO_SETUP_AUTOSTART_TARGET_INDEX=1
 o	SURVEY_OPTED_IN=0
 o	CONFIG_SERIAL_CONSOLE_ENABLE=1
 •	Eject your SD card
+![image](https://user-images.githubusercontent.com/112636651/190541688-61700abd-9dc0-4344-abd9-731fbd470395.png)
 
 Step 3:
 
@@ -45,34 +47,8 @@ Using ssh login to pi(Must change the root).
 ssh root@IPADDR
 password: dietpi
 After logging into pi change software and password.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/112636651/190541739-59680798-1a01-4f5a-bcfa-133847c1b6f4.png)
+![image](https://user-images.githubusercontent.com/112636651/190541780-9da157e2-05b7-45c8-9b12-1593bd633901.png)
 Now its ready to install platform software.
 
 
