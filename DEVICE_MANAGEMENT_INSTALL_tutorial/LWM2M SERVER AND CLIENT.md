@@ -11,8 +11,9 @@ iv)	check the version.
  	git –version
   
 ![image](https://user-images.githubusercontent.com/112636651/192080616-e6ebb2d0-2a24-4184-9ac8-00abb4d217a2.png)
+In above image loged into dietpi software and going to search for software.
 ![image](https://user-images.githubusercontent.com/112636651/192080624-e73103a3-fe04-4b56-835e-5b1e7d521169.png)
-
+In this image checking the git version and going to search for next installation software.
 
 2)	In dietpi command line start dietpi software
 sudo dietpi-software
@@ -23,7 +24,7 @@ iv)	Check the
 java –version
 
 ![image](https://user-images.githubusercontent.com/112636651/192080633-0b07289b-14d7-4285-a7d0-e8fad978dfa7.png)
-
+In the above image installed java jdk.
 
 3)	Installation of maven on Rapberry pi
 i)	Created a download directory mkdir download
@@ -36,7 +37,7 @@ vi)	I added the bin directory and tested maven installation.
  echo 'PATH="${PATH}:~/download/apache-maven-3.8.6/bin"' >>  ~/.bashrc
 
 ![image](https://user-images.githubusercontent.com/112636651/192080644-ef2bc3bd-2212-4516-bdc1-7ec6efcc081d.png)
-
+In the above image added the bin directory and tested maven installation.
 
 vii)	Test maven installation using
 bash
