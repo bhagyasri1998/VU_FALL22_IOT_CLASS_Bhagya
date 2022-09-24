@@ -98,6 +98,19 @@ In order to use the Leshan boostrap and LWM2M standalone server, it has to be co
 
 1) First install mvn and java
 
+![image](https://user-images.githubusercontent.com/112636651/192080730-d696ec77-5cfc-4111-ac15-1105e3db0e9d.png)
+
+![image](https://user-images.githubusercontent.com/112636651/192080791-9bf4be17-3e74-4f42-8316-be4843303e9f.png)
+
+The libraries and example servers be compiled and ready to use. To test that the example server is working, run the Above commands in the screenshot.
+
+Credentials must be added in order to connect to the LWM2M standalone server with a secure connection for a client application. 
+Such credentials may be added using the Leshan user interface in the browser. The picture below depicts a common arrangement for the SDK examples.
+
+![image](https://user-images.githubusercontent.com/112636651/192080922-dae266fb-8ac6-412d-a92f-f079a147e5a5.png)
+
+After setting up the credentials.
+![image](https://user-images.githubusercontent.com/112636651/192080959-2514ae12-34f9-47ba-a7e3-418a41dd7aad.png)
 
 
 
