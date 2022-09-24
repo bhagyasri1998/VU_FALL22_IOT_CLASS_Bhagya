@@ -99,6 +99,8 @@ Testing Leshan Server:
 
 Additional Experiment of the LWM2M:
 
+Bootstrap:
+
 In order to use the Leshan boostrap and LWM2M standalone server, it has to be compiled from source code. The description below is for a computer running Ubuntu.
 
 1) First install mvn and java
@@ -117,6 +119,37 @@ Such credentials may be added using the Leshan user interface in the browser. Th
 After setting up the credentials.
 
 ![image](https://user-images.githubusercontent.com/112636651/192080959-2514ae12-34f9-47ba-a7e3-418a41dd7aad.png)
+
+Wireshark:
+
+1) Install wireshark
+2) Select one or more networks
+
+![image](https://user-images.githubusercontent.com/112636651/192081375-9ecf52ff-b5e5-42f9-a8d4-0c07efb59aad.png)
+
+This image shows selecting wifi.
+![image](https://user-images.githubusercontent.com/112636651/192081389-41d7b60b-07da-4983-a0b0-2026ca4eba96.png)
+
+This image shows selecting adapter loopback traffic.
+3) Go to menubar then select capture.
+Capturing From WIFI:
+
+![image](https://user-images.githubusercontent.com/112636651/192081529-fc0386bd-94d9-4faf-a201-28ce40aa6c2b.png)
+
+4) To save choose an Export option to record the capture.
+5) To stop capturing select stop on menubar.
+6) To change the time format that you want.
+
+![image](https://user-images.githubusercontent.com/112636651/192081595-6fa892b7-1a31-4985-abf2-4f2e34e2d56d.png)
+
+7) For example, if you want to display HTTP packets, type HTTP.
+
+![image](https://user-images.githubusercontent.com/112636651/192081643-0afac159-fadd-460f-9539-a193bcd27125.png)
+
+8) Image Capturing Adapter for loopback traffic.
+
+![image](https://user-images.githubusercontent.com/112636651/192081767-680401ba-2417-43c8-9a06-cd46109b84ef.png)
+
 
 
 
