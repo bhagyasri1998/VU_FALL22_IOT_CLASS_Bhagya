@@ -10,6 +10,8 @@ iii)	go to install on dietpi software
 iv)	check the version.
  	git –version
   
+![image](https://user-images.githubusercontent.com/112636651/192080616-e6ebb2d0-2a24-4184-9ac8-00abb4d217a2.png)
+![image](https://user-images.githubusercontent.com/112636651/192080624-e73103a3-fe04-4b56-835e-5b1e7d521169.png)
 
 
 2)	In dietpi command line start dietpi software
@@ -20,6 +22,7 @@ iii)	Go to install on dietpi software
 iv)	Check the 
 java –version
 
+![image](https://user-images.githubusercontent.com/112636651/192080633-0b07289b-14d7-4285-a7d0-e8fad978dfa7.png)
 
 
 3)	Installation of maven on Rapberry pi
@@ -32,6 +35,7 @@ v)	Confirming the installation using ( while installing I got an error that the 
 vi)	I added the bin directory and tested maven installation.
  echo 'PATH="${PATH}:~/download/apache-maven-3.8.6/bin"' >>  ~/.bashrc
 
+![image](https://user-images.githubusercontent.com/112636651/192080644-ef2bc3bd-2212-4516-bdc1-7ec6efcc081d.png)
 
 
 vii)	Test maven installation using
@@ -44,6 +48,7 @@ sudo echo 'JAVA_HOME="/usr/lib/jvm/java-17-openjdk-arm64"' >> ~/.bashrc
 bash
 echo $JAVA_HOME
 
+![image](https://user-images.githubusercontent.com/112636651/192080657-a421b37a-ca19-4e2c-924d-b3d3d47319fb.png)
 
 
 4) Installation of leshan git:
@@ -62,6 +67,7 @@ echo $JAVA_HOME
        	After that continue to build leshan by
 		mvn clean install
 
+![image](https://user-images.githubusercontent.com/112636651/192080668-77310010-2e26-47b5-99b1-e7e436fd6cfd.png)
 
 
 Testing Leshan Server:
@@ -70,7 +76,8 @@ Testing Leshan Server:
 	cd ~/projects/leshan
 	java -jar leshan-server-demo/target/leshan-server-demo-*-SNAPSHOT-jar-with-dependencies.jar &
   
-  
+  ![image](https://user-images.githubusercontent.com/112636651/192080674-81d31fdb-d4f1-4760-a3bf-5d1042b0d388.png)
+
   
   
 2) Connect to Leshan demo UI: http://RPI_IPADDR:8080
@@ -78,6 +85,7 @@ Testing Leshan Server:
 		http:// 192.168.8.147:8080
 	This will bring to leshan register client page
 
+![image](https://user-images.githubusercontent.com/112636651/192080682-cad18e17-9f18-4ba2-81f7-c53ccd40721c.png)
 
 
 3) Run leshan client to add it to the page
