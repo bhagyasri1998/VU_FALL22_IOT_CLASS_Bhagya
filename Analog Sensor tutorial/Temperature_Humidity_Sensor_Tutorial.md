@@ -26,3 +26,5 @@ sudo ./humid
 so, I changed counter value to 50 then run the C code after saving.
 
 ![image](https://user-images.githubusercontent.com/112636651/193222025-c957dc8d-0695-47dd-8822-bd70c37b5852.png)
+
+So, the result after changing was above.
