@@ -16,15 +16,17 @@ Hardware Equipment:
 	https://dl.espressif.com/dl/package_esp32_index.json
 7) Next install “ESP32 by Espressif Systems” by selecting toolsBoardBoards Manager.
 
-8) Later select “ESP32 Wrover Module” in the toolsBoardESP32 as shown below.
+8) Later select “ESP32 Wrover Module” in the tools->Board->ESP32 as shown below.
 
 ![image](https://user-images.githubusercontent.com/112636651/193222496-a21c2ee1-a886-46df-b3a2-a7d4e36a4a11.png)
+
+After selecting the "ESP32 Wrover Module" was shown below
 
 ![image](https://user-images.githubusercontent.com/112636651/193222663-51682f8c-3fe0-41f8-b246-21a326266fcc.png)
 
 9) Connect the ESP32 board to the computer using USB cable.
 10) select the COM4 port in the tools.
-11) Download the below library zip file and go to sketch Include library Add Zip library and select that zip file.
+11) Download the below library zip file and go to sketch ->Include library ->Add Zip library and select that zip file. It was shown in the below figure.
 
 ![image](https://user-images.githubusercontent.com/112636651/193222739-7616400e-e1df-4c4d-a002-5c9f3e10e222.png)
 
