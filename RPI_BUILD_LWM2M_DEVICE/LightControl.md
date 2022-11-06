@@ -21,14 +21,16 @@ Buliding and installing of avs_commons are completed.
 Install & Build the Anjay Library:
 1. Retrieving the Anjay code
 	  cd ~/projects
-    git clone https://github.com/AVSystem/Anjay
+   	  git clone https://github.com/AVSystem/Anjay
 2. Build Anjay code
 	  cd ~/projects/AnjayFor
 	  git submodule update --init
 	  cmake . -DDTLS_BACKEND="mbedtls"
 	  make -j
+	  
 
 ![image](https://user-images.githubusercontent.com/112636651/200152241-214c4259-0602-4acb-a3b5-193dd7bda2c9.png)
+
 
 Installing Anjay Library objects:
 	  cd ~/projects/Anjay
