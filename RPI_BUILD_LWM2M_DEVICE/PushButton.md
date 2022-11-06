@@ -1,19 +1,24 @@
 #Push Button
-•	For push button repeat the same process as light control. 
+
+•For push button repeat the same process as light control. 
 ssh to your Raspberry pi using "ssh dietpi@PI_IPADDR "
 Install C compiler:
 1. See if the c compiler is installed or not using
+
 	gcc -v
   
 ![image](https://user-images.githubusercontent.com/112636651/200152589-9daf85b2-23d9-4d32-8fa0-11b972a87f25.png)
 
 2. If not installed then use
+
 	sudo-software
 To Build Anjay install utlis and Libraries:
 1. Clone the avs_commons repo
+
 	cd ~/projects
 	git clone https://github.com/AVSystem/avs_commons
 2. Build and install avs_commons library
+
 	cd ~/projects/avs_commons
 	cmake . && make && sudo make install
 Buliding and installing of avs_commons are completed.
@@ -22,9 +27,11 @@ Buliding and installing of avs_commons are completed.
 
 Install & Build the Anjay Library:
 1. Retrieving the Anjay code
+
 	cd ~/projects
 	git clone https://github.com/AVSystem/Anjay
 2. Build Anjay code
+
 	cd ~/projects/AnjayFor
 	git submodule update --init
 	cmake . -DDTLS_BACKEND="mbedtls"
@@ -33,6 +40,7 @@ Install & Build the Anjay Library:
 ![image](https://user-images.githubusercontent.com/112636651/200152602-454da082-d553-4cbe-b1fb-8d705f126082.png)
 
 Installing Anjay Library objects:
+
 	cd ~/projects/Anjay
 	cmake -DCMAKE_INSTALL_PREFIX=/home/dietpi/projects/Anjay-esp32-client . && make &&  make install
 
@@ -44,8 +52,10 @@ If the build fails, delete the Anjay-esp32-client directory and clone a prebuilt
 
 Build of Anjay Client
 1. Move to anjay-esp-32 directory that was clone earlier
+
 	cd ~/projects/Anjay-esp32-client
 2. For using the esp tools setup the local environment
+
 	cd ~/projects/Anjay-esp32-client
 	. $HOME/esp/esp-idf/export.sh
 	idf.py set-target esp32 
@@ -53,6 +63,7 @@ Build of Anjay Client
 ![image](https://user-images.githubusercontent.com/112636651/200152618-b04b5cf9-f53a-4b0a-9f95-a80339152986.png)
 
 3. Setting up the device requirements
+
 	cd ~/projects/Anjay-esp32-client
 	idf.py menuconfig
 
@@ -67,6 +78,7 @@ And setup the connection configuration WIFI SSID & WIFI PASSWORD
 •	Next same as light control build the code and flash.
 
 4. Using below commands build the code for device
+
 	cd ~/projects/Anjay-esp32-client
 	idf.py build
 
@@ -74,6 +86,7 @@ And setup the connection configuration WIFI SSID & WIFI PASSWORD
 
 5. Then find the port and flash the device
 	Finding the port number using:
+	
 		ls -l /dev/ttyUSB*
 
 ![image](https://user-images.githubusercontent.com/112636651/200152656-d23a02a9-5916-4e72-948a-7ccc4f68a24f.png)
@@ -82,7 +95,8 @@ It returns like below:
 
 ![image](https://user-images.githubusercontent.com/112636651/200152668-9e887ff1-ccf0-4a1c-8f85-5cd9ae229747.png)
 
-To load the code, change the port number in this line. flash idf.py -p port number with port number = 0 I used
+To load the code, change the port number in this line. flash idf.py -p port number with port number = 0 I used.
+
 	cd ~/projects/Anjay-esp32-client
 	sudo chmod 666 /dev/ttyUSB0
 	idf.py -p 0 flash
@@ -93,11 +107,14 @@ Then you can see flashing:
 
 To control open leshan-server:
 1. Start the server using:
+
 	cd ~/projects/leshan
 	java -jar leshan-server-demo/target/leshan-server-demo-*-SNAPSHOT-jar-with-dependencies.jar &
 2. My Raspberry PI is using 192.168.8.147 from the router admin client page
+
 	http://192.168.8.147:8080
 3. Run the leshan client
+
 	java -jar leshan-client-demo/target/leshan-client-demo-*-SNAPSHOT-jar-with-dependencies.jar
 
 
