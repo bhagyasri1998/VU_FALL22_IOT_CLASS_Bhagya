@@ -28,15 +28,14 @@ Install & Build the Anjay Library:
 	  cmake . -DDTLS_BACKEND="mbedtls"
 	  make -j
 	  
-
 ![image](https://user-images.githubusercontent.com/112636651/200152241-214c4259-0602-4acb-a3b5-193dd7bda2c9.png)
 
 
 Installing Anjay Library objects:
 	  cd ~/projects/Anjay
 	  cmake -DCMAKE_INSTALL_PREFIX=/home/dietpi/projects/Anjay-esp32-client . && make &&  make install
+	  
 ![image](https://user-images.githubusercontent.com/112636651/200152261-bd9f05d2-6a9a-492b-a178-2003a0729e5a.png)
-
 
 ![image](https://user-images.githubusercontent.com/112636651/200152244-5c5925c9-a755-4db9-8d6b-3e65c9e967c9.png)
 
