@@ -112,3 +112,6 @@ And we must select on/off by clicking on it. and the same as the dimmer by selec
 
 ![image](https://user-images.githubusercontent.com/112636651/200152344-e5456460-d3e0-4888-b4c1-0f95ff320723.png)
 
+![image](https://user-images.githubusercontent.com/112636651/200153010-bd6542c3-15fc-4cd4-87b9-74354cea06fe.png)
+
+
