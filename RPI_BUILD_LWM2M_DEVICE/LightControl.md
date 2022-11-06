@@ -1,12 +1,12 @@
 ssh to your Raspberry pi using "ssh dietpi@PI_IPADDR "
 Install C compiler:
 1. See if the c compiler is installed or not using
-	gcc -v
+	  gcc -v
   
 ![image](https://user-images.githubusercontent.com/112636651/200152220-c1196dcd-fa51-4fa8-a998-f93410fc4a4b.png)
 
 2. If not installed then use
-	sudo-software
+	  sudo-software
 To Build Anjay install utlis and Libraries:
 1. Clone the avs_commons repo
 	  cd ~/projects
